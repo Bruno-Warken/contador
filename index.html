@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador de Tempo</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>Contador de Tempo</h1>
+
+    </header>
+
+    <main class="mainContainer">
+
+        <div class="inputMin">
+
+            <label for="minutos">Informe os minutos:</label>
+            <input type="number" name="minutos" id="minutos">
+            <input type="button" value="Contar" id="botaoConverter" onclick="converter()">
+
+        </div>
+
+        <div class="resultadoMainContainer">
+            
+            <div class="resultadoContainer">
+                <p id="resultadoHoras">00</p>
+            </div>
+
+            <div class="resultadoContainer">
+                <p id="resultadoMinutos">00</p>
+            </div>
+
+            <div class="resultadoContainer">
+                <p id="resultadoSegundos">00</p>
+            </div>
+
+        </div>
+
+        <div class="botoesInteracao">
+            <input type="button" id="btnPausa" value="Pausar" onclick="pausar()">
+            <input type="button" id="btnReseta" value="Resetar" onclick="resetar()">
+            <input type="button" id="btnCancela" value="Cancelar" onclick="cancelar()">
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

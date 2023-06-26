@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4d6d6d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 100vh;
+}
+
+.header {
+    font-size: 0.7rem;
+    background-color: #081C15;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputMin {
+    height: 150px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #081C15;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+p, label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#minutos {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+input[type=button]{
+    background-color: #213838;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+    width: 100px;
+}
+
+input[type=button]:active {
+    transform: translateY(1px);
+}
+
+input[type=button]:hover{
+    background-color: #286650;
+    transition: background-color 0.3s;
+}
+
+.resultadoMainContainer {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.resultadoContainer {
+    background-color: #081C15;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.botoesInteracao {
+    margin: 45px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+@media (min-width: 768px){
+    .inputMin{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px){
+    .inputMin{
+        width: 30%;
+    }
+}
+
+@media (min-width: 2560px){
+    h1{
+        font-size: 2rem;
+    }
+
+    label{
+        font-size: 1.5rem;
+    }
+
+    #minutos{
+        height: 35px;
+        font-size: 1.5rem;
+    }
+
+    input[type=button]{
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0.04rem;
+    }
+
+    .resultadoContainer{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+}
